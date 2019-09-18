@@ -1,0 +1,15 @@
+<div id="company-form-wrapper">
+    <div class="form">
+        <div>
+            <label for="company">Company Domain:</label>
+            <input (keyup.enter)="getCompanyInfo(company.value)" #company name="company" type="text" placeholder="example.com">
+        </div>
+        <div>
+            <button (click)="getCompanyInfo(company.value)" class="btn btn-success">ADD</button>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="companyData">
+    <app-company-data [companyData]="companyData"></app-company-data>
+</div>

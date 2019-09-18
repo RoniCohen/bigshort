@@ -1,0 +1,9 @@
+<div id="company-data-wrapper">
+    <ul>
+        <li>
+            <img src="{{companyData.logo}}" alt="Logo">
+        </li>
+        <li class="company-name" [routerLink]="['/',companyData.domain]">Company Name: {{companyData.name}}</li>
+        <li>Company Type: {{companyData.type}}</li>
+    </ul>
+</div>

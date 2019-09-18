@@ -1,0 +1,20 @@
+<div *ngIf="companyData">
+    <div *ngIf="companyData.logo">
+        <img src="{{companyData.logo}}" alt="Logo">
+    </div>
+    <div *ngIf="companyData.name">
+        Name: {{companyData.name}}
+    </div>
+    <div *ngIf="companyData.domain">
+        Domain: {{companyData.domain}}
+    </div>
+    <div *ngIf="companyData.description">
+        DescriptionL {{companyData.description}}
+    </div>
+    <div *ngIf="companyData.industry">
+        Industry {{companyData.industry}}
+    </div>
+    <div *ngIf="companyData.location">
+        Location {{companyData.location}}
+    </div>
+</div>
